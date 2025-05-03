@@ -1,8 +1,8 @@
 # Clause Inserter
-A Python tool for programmatically inserting clauses into legal documents with precise formatting control, built using the [python-docx](https://python-docx.readthedocs.io/en/latest/) library.
+A Python CLI tool for programmatically inserting clauses into legal MS Word documents (.docx) with precise formatting control, built using the [python-docx](https://python-docx.readthedocs.io/en/latest/) library.
 
 ## 📌 Overview
-This tool allows users to insert clauses, sentences, or paragraphs into Word documents while maintaining consistent formatting, numbering, and styling. Built using the python-docx library. It features an interactive CLI interface.
+This CLI tool allows users to insert clauses, sentences, or paragraphs into Word documents while maintaining consistent formatting, numbering, and styling. Built using the python-docx library. It features an interactive CLI interface.
 
 **Example Use Cases**
 
@@ -79,14 +79,3 @@ src/
 ├── core.py             # Core functionality for document manipulation
 └── functions.py        # Helper functions for text processing
 ```
-
-## Screenshots
-
-<p align="center">
-  <table>
-    <tr>
-      <td><img src="public/project_screenshots/ss2.png" alt="" width="400"></td>
-      <td><img src="public/project_screenshots/ss4.png" alt="" width="400"></td>
-    </tr>
-  </table>
-</p>
