@@ -50,6 +50,14 @@ The tool will guide you through an interactive process to:
 3. Configure formatting options
 4. Insert your clause text
 
+## Technologies
+- **Python**: Core programming language
+- **python-docx**: Library for working with Word documents
+- **haggis**: Supporting library
+- **lxml**: XML processing library
+- **numpy**: Numerical computing library
+- **CLI**: Command-line interface for user interaction
+
 ## Project Structure
 ```
 src/
