@@ -2,24 +2,27 @@
 A Python CLI tool for programmatically inserting clauses into legal MS Word documents (.docx) with accurate formatting control, built using the [python-docx](https://python-docx.readthedocs.io/en/latest/) library.
 
 ## 📌 Overview
-This CLI tool allows users to insert clauses, sentences, or paragraphs into MS Word documents while maintaining consistent formatting, numbering, and styling. Built using the python-docx library, it features an interactive CLI interface. The tool was designed to support a wide range of document types written in many different styles, ensuring flexibility across diverse formatting conventions.
+This CLI tool allows users to insert clauses, sentences, or paragraphs into **MS Word documents** while maintaining consistent formatting, numbering, and styling. Built using the **python-docx** library, it features an interactive CLI interface. The tool was designed to support a wide range of document types written in many different styles, ensuring flexibility across diverse formatting conventions.
 
 **Example Use Cases**
 
-Contract 1 – Insert List Item
+**Contract 1 – Insert List Item**
+
 Insert the following as section 1A, directly after the "Definitions" heading. Match the style and numbering of the document:
 
-“Affiliate” means any entity that directly or indirectly controls, is controlled by, or is under common control with a party, where “control” means the possession, directly or indirectly, of the power to direct or cause the direction of the management and policies of such entity, whether through ownership of voting securities, by contract, or otherwise.
+> “Affiliate” means any entity that directly or indirectly controls, is controlled by, or is under common control with a party, where “control” means the possession, directly or indirectly, of the power to direct or cause the direction of the management and policies of such entity, whether through ownership of voting securities, by contract, or otherwise.
 
-Contract 2 – Insert Sentence Within Paragraph
+**Contract 2 – Insert Sentence Within Paragraph**
+
 Insert the sentence below between the first and second sentence in Section 11. Match the surrounding font:
 
-The Disclosing Party makes no representations or warranties regarding the accuracy or completeness of the Confidential Information.
+> The Disclosing Party makes no representations or warranties regarding the accuracy or completeness of the Confidential Information.
 
-Contract 3 – Insert New Clause with Heading
+**Contract 3 – Insert New Clause with Heading**
+
 Insert the clause below as Section 11, directly after the last paragraph in Section 10. Add a heading in bold and underlined if needed:
 
-Residuals. Nothing in this Agreement shall be construed to limit the Receiving Party’s right to independently develop or acquire products or services without use of the Disclosing Party’s Confidential Information, nor shall it restrict the use of any general knowledge, skills, or experience retained in unaided memory by personnel of the Receiving Party.
+> Residuals. Nothing in this Agreement shall be construed to limit the Receiving Party’s right to independently develop or acquire products or services without use of the Disclosing Party’s Confidential Information, nor shall it restrict the use of any general knowledge, skills, or experience retained in unaided memory by personnel of the Receiving Party.
 
 ## 🧩 Features
 - CLI Interactive interface
@@ -29,7 +32,7 @@ Residuals. Nothing in this Agreement shall be construed to limit the Receiving P
 - Preserve formatting of surrounding text
 - Interactive paragraph selection
 
-## Getting Started
+## ✅ Getting Started
 
 ### Prerequisites
 - Python 3.6 or higher
@@ -53,7 +56,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Usage
+### Usage
 
 Run the tool from the command line by providing a Word document path:
 
