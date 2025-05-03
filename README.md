@@ -1,21 +1,19 @@
 # Clause Inserter
-
 A Python tool for programmatically inserting clauses into legal documents with precise formatting control.
 
 ## Project Overview
-
 This tool allows users to insert clauses, sentences, or paragraphs into Word documents while maintaining consistent formatting, numbering, and styling.
 
 ## Installation
 
 ```bash
 # Clone the repository
-git clone [repository-url]
+git clone git@github.com:cdznd/clause-inserter.git
 cd clause-inserter
-# Checkout to the solution branch
-git checkout task-solution-1
+
 # Set up virtual environment
 python -m venv venv
+
 # Activate virtual environment
 ## On macOS/Linux
 source venv/bin/activate
