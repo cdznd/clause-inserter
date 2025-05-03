@@ -4,7 +4,13 @@ A Python tool for programmatically inserting clauses into legal documents with p
 ## Project Overview
 This tool allows users to insert clauses, sentences, or paragraphs into Word documents while maintaining consistent formatting, numbering, and styling.
 
-## Installation
+## Getting Started
+
+### Prerequisites
+- Python 3.6 or higher
+- Word documents (.docx format)
+
+### Installation
 
 ```bash
 # Clone the repository
@@ -44,6 +50,26 @@ The tool will guide you through an interactive process to:
 - Preserve formatting of surrounding text
 - Interactive paragraph selection
 
+## Project Structure
+```
+src/
+├── clause_inserter.py  # Main application file
+├── cli.py              # Command line interface implementation
+├── core.py             # Core functionality for document manipulation
+└── functions.py        # Helper functions for text processing
+```
+
+## Screenshots
+
+<p align="center">
+  <table>
+    <tr>
+      <td><img src="public/project_screenshots/ss2.png" alt="" width="400"></td>
+      <td><img src="public/project_screenshots/ss4.png" alt="" width="400"></td>
+    </tr>
+  </table>
+</p>
+
 ## Developer Notes
 
 # To Remember
@@ -61,9 +87,9 @@ Existing bugs:
 2 - Sometimes insert before/after don't keep the font styling
 
 Contract 1 (Insert list item)
-Insert this clause as section 1A, directly after the “Definitions” heading. Please match the document’s style. (find the paragraph to add manually)
+Insert this clause as section 1A, directly after the "Definitions" heading. Please match the document's style. (find the paragraph to add manually)
 
-“Affiliate” means any entity that directly or indirectly controls, is controlled by, or is under common control with a party, where “control” means the possession, directly or indirectly, of the power to direct or cause the direction of the management and policies of such entity, whether through ownership of voting securities, by contract, or otherwise.
+"Affiliate" means any entity that directly or indirectly controls, is controlled by, or is under common control with a party, where "control" means the possession, directly or indirectly, of the power to direct or cause the direction of the management and policies of such entity, whether through ownership of voting securities, by contract, or otherwise.
 
 Contract 2 (Insert sentence between paragraph)
 Insert the following between the first and second sentence in Section 11.  Please match the font of the surrounding text.
@@ -71,7 +97,7 @@ Insert the following between the first and second sentence in Section 11.  Pleas
 The Disclosing Party makes no representations or warranties regarding the accuracy or completeness of the Confidential Information.
 
 Contract 3:
-Insert this clause as section 11, directly after the last paragraph in section 10. If a heading is needed, format it bold and underlined, and match the document’s style.
+Insert this clause as section 11, directly after the last paragraph in section 10. If a heading is needed, format it bold and underlined, and match the document's style.
 
-Residuals.  Nothing in this Agreement shall be construed to limit the Receiving Party’s right to independently develop or acquire products or services without use of the Disclosing Party’s Confidential Information, nor shall it restrict the use of any general knowledge, skills, or experience retained in unaided memory by personnel of the Receiving Party.
+Residuals.  Nothing in this Agreement shall be construed to limit the Receiving Party's right to independently develop or acquire products or services without use of the Disclosing Party's Confidential Information, nor shall it restrict the use of any general knowledge, skills, or experience retained in unaided memory by personnel of the Receiving Party.
 
