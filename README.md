@@ -1,10 +1,27 @@
 # Clause Inserter
 A Python tool for programmatically inserting clauses into legal documents with precise formatting control, built using the [python-docx](https://python-docx.readthedocs.io/en/latest/) library.
 
-## Overview
+## 📌 Overview
 This tool allows users to insert clauses, sentences, or paragraphs into Word documents while maintaining consistent formatting, numbering, and styling. Built using the python-docx library. It features an interactive CLI interface.
 
-## Features
+**Example Use Cases**
+
+Contract 1 – Insert List Item
+Insert the following as section 1A, directly after the "Definitions" heading. Match the style and numbering of the document:
+
+“Affiliate” means any entity that directly or indirectly controls, is controlled by, or is under common control with a party, where “control” means the possession, directly or indirectly, of the power to direct or cause the direction of the management and policies of such entity, whether through ownership of voting securities, by contract, or otherwise.
+
+Contract 2 – Insert Sentence Within Paragraph
+Insert the sentence below between the first and second sentence in Section 11. Match the surrounding font:
+
+The Disclosing Party makes no representations or warranties regarding the accuracy or completeness of the Confidential Information.
+
+Contract 3 – Insert New Clause with Heading
+Insert the clause below as Section 11, directly after the last paragraph in Section 10. Add a heading in bold and underlined if needed:
+
+Residuals. Nothing in this Agreement shall be construed to limit the Receiving Party’s right to independently develop or acquire products or services without use of the Disclosing Party’s Confidential Information, nor shall it restrict the use of any general knowledge, skills, or experience retained in unaided memory by personnel of the Receiving Party.
+
+## 🧩 Features
 - CLI Interactive interface
 - Insert clauses before or after paragraphs
 - Insert text between sentences in a paragraph
@@ -41,7 +58,7 @@ pip install -r requirements.txt
 Run the tool from the command line by providing a Word document path:
 
 ```bash
-python clause_inserter.py path/to/document.docx
+python src/clause_inserter.py path/to/document.docx
 ```
 
 The tool will guide you through an interactive process to:
@@ -50,15 +67,11 @@ The tool will guide you through an interactive process to:
 3. Configure formatting options
 4. Insert your clause text
 
-## Technologies
+## 💻 Technologies
 - **Python**: Core programming language
 - **python-docx**: Library for working with Word documents
-- **haggis**: Supporting library
-- **lxml**: XML processing library
-- **numpy**: Numerical computing library
-- **CLI**: Command-line interface for user interaction
 
-## Project Structure
+## 🏗️ Project Structure
 ```
 src/
 ├── clause_inserter.py  # Main application file
@@ -77,35 +90,3 @@ src/
     </tr>
   </table>
 </p>
-
-## Developer Notes
-
-# To Remember
-python-docx can ONLY work with styles that are defined in the document.
-https://stackoverflow.com/questions/51829366/bullet-lists-in-python-docx
-
-A Run is a sequence of characters that follows the same formatting
-
-Legal-style numbered list because python-docx don't nativally suport list
-Small-caps Versalete
-keeping line height and spacement between words
-
-Existing bugs: 
-1 - With we use insert after with the "The Disclosing Party ..." specifically it restarts the list
-2 - Sometimes insert before/after don't keep the font styling
-
-Contract 1 (Insert list item)
-Insert this clause as section 1A, directly after the "Definitions" heading. Please match the document's style. (find the paragraph to add manually)
-
-"Affiliate" means any entity that directly or indirectly controls, is controlled by, or is under common control with a party, where "control" means the possession, directly or indirectly, of the power to direct or cause the direction of the management and policies of such entity, whether through ownership of voting securities, by contract, or otherwise.
-
-Contract 2 (Insert sentence between paragraph)
-Insert the following between the first and second sentence in Section 11.  Please match the font of the surrounding text.
-
-The Disclosing Party makes no representations or warranties regarding the accuracy or completeness of the Confidential Information.
-
-Contract 3:
-Insert this clause as section 11, directly after the last paragraph in section 10. If a heading is needed, format it bold and underlined, and match the document's style.
-
-Residuals.  Nothing in this Agreement shall be construed to limit the Receiving Party's right to independently develop or acquire products or services without use of the Disclosing Party's Confidential Information, nor shall it restrict the use of any general knowledge, skills, or experience retained in unaided memory by personnel of the Receiving Party.
-
