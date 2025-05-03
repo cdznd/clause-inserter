@@ -2,7 +2,7 @@
 A Python CLI tool for programmatically inserting clauses into legal MS Word documents (.docx) with accurate formatting control, built using the [python-docx](https://python-docx.readthedocs.io/en/latest/) library.
 
 ## 📌 Overview
-This CLI tool allows users to insert clauses, sentences, or paragraphs into Word documents while maintaining consistent formatting, numbering, and styling. Built using the python-docx library. It features an interactive CLI interface.
+This CLI tool allows users to insert clauses, sentences, or paragraphs into MS Word documents while maintaining consistent formatting, numbering, and styling. Built using the python-docx library, it features an interactive CLI interface. The tool was designed to support a wide range of document types written in many different styles, ensuring flexibility across diverse formatting conventions.
 
 **Example Use Cases**
 
